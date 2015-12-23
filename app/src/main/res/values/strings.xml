@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Experience Sampling Survey</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_survey_screen">Survey</string>
+    <string name="title_activity_display_results">Response</string>
+    <string name="survey_hint">Enter response here</string>
+    <string name="question_one">What are you doing right now?</string>
+    <string name="how_does_that_feel">How does that make you feel?</string>
+    <string name="how_much_enjoy">How do you feel about this task?</string>
+</resources>

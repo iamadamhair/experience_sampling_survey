@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="edu.tamu.adamhair.experiencesamplingsurvey.SurveyScreen"
+    tools:showIn="@layout/activity_survey_screen">
+
+    <TextView
+        android:id="@+id/questionOneText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/question_one" />
+
+    <EditText
+        android:id="@+id/questionOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questionOneText"
+        android:layout_marginTop="20dp"
+        android:hint="@string/survey_hint"
+        android:inputType="textCapSentences"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/likertOneText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questionOne"
+        android:layout_marginTop="20dp"
+        android:text="@string/how_much_enjoy" />
+
+    <SeekBar
+        android:id="@+id/likertOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/likertOneText"
+        android:layout_marginTop="20dp"
+        android:max="6" />
+
+    <TextView
+        android:id="@+id/veryLittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/likertOne"
+        android:layout_marginTop="10dp"
+        android:text="Strongly Dislike" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/likertOne"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Neutral" />
+
+    <TextView
+        android:id="@+id/aLot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/likertOne"
+        android:layout_marginTop="10dp"
+        android:text="Strongly Like" />
+
+
+</RelativeLayout>
